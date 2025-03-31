@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Courses Quizzes</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home">AI Learning</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+                            <li class="dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#course0" data-course="0">Course 1: AI Fundamentals</a>
+                                <ul class="dropdown-menu submenu" aria-labelledby="course0Dropdown">
+                                    <li><a class="dropdown-item" href="#course0-topic0">A Brief History of AI</a></li>
+                                    <li><a class="dropdown-item" href="#course0-topic1">What is Artificial Intelligence?</a></li>
+                                    <li><a class="dropdown-item" href="#course0-topic2">Knowledge vs Intelligence</a></li>
+                                    <li><a class="dropdown-item" href="#course0-topic3">Data Everywhere</a></li>
+                                    <li><a class="dropdown-item" href="#course0-topic4">Pattern Recognition</a></li>
+                                    <li><a class="dropdown-item" href="#course0-topic5">Machine Learning</a></li>
+                                    <li><a class="dropdown-item" href="#course0-topic6">Types of Machine Learning</a></li>
+                                    <li><a class="dropdown-item" href="#course0-topic7">Deep Learning</a></li>
+                                    <li><a class="dropdown-item" href="#course0-topic8">Natural Language Processing (NLP)</a></li>
+                                    <li><a class="dropdown-item" href="#course0-topic9">AI Algorithms</a></li>
+                                    <li><a class="dropdown-item" href="#course0-topic10">AI in Action</a></li>
+                                    <li><a class="dropdown-item" href="#course0-quiz">Quiz</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#course1" data-course="1">Course 2: Generative AI</a>
+                                <ul class="dropdown-menu submenu" aria-labelledby="course1Dropdown">
+                                    <li><a class="dropdown-item" href="#course1-topic0">What is Generative AI?</a></li>
+                                    <li><a class="dropdown-item" href="#course1-topic1">What is Generative AI Model?</a></li>
+                                    <li><a class="dropdown-item" href="#course1-topic2">AI Linguistics</a></li>
+                                    <li><a class="dropdown-item" href="#course1-topic3">Visualization with AI</a></li>
+                                    <li><a class="dropdown-item" href="#course1-topic4">AI Companion in Content Creation</a></li>
+                                    <li><a class="dropdown-item" href="#course1-topic5">New Opportunities with Generative AI</a></li>
+                                    <li><a class="dropdown-item" href="#course1-quiz">Quiz</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#course2" data-course="2">Course 3: Search Technology</a>
+                                <ul class="dropdown-menu submenu" aria-labelledby="course2Dropdown">
+                                    <li><a class="dropdown-item" href="#course2-topic0">The Evolution of Search</a></li>
+                                    <li><a class="dropdown-item" href="#course2-topic1">How Does A Search Engine Work</a></li>
+                                    <li><a class="dropdown-item" href="#course2-topic2">Reasoning Engines</a></li>
+                                    <li><a class="dropdown-item" href="#course2-topic3">A New Way to Search</a></li>
+                                    <li><a class="dropdown-item" href="#course2-topic4">Prompt Engineering</a></li>
+                                    <li><a class="dropdown-item" href="#course2-topic5">Best Practices in Prompting</a></li>
+                                    <li><a class="dropdown-item" href="#course2-topic6">Critical Thinking</a></li>
+                                    <li><a class="dropdown-item" href="#course2-quiz">Quiz</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#course3" data-course="3">Course 4: Responsible AI</a>
+                                <ul class="dropdown-menu submenu" aria-labelledby="course3Dropdown">
+                                    <li><a class="dropdown-item" href="#course3-topic0">Using AI Responsibility</a></li>
+                                    <li><a class="dropdown-item" href="#course3-topic1">Principles of Responsible AI</a></li>
+                                    <li><a class="dropdown-item" href="#course3-topic2">Deepfakes and Copyright</a></li>
+                                    <li><a class="dropdown-item" href="#course3-topic3">Human-AI Interaction</a></li>
+                                    <li><a class="dropdown-item" href="#course3-quiz">Quiz</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#course4" data-course="4">Course 5: Microsoft Copilot</a>
+                                <ul class="dropdown-menu submenu" aria-labelledby="course4Dropdown">
+                                    <li><a class="dropdown-item" href="#course4-topic0">What is Microsoft Copilot</a></li>
+                                    <li><a class="dropdown-item" href="#course4-topic1">Navigating Copilot</a></li>
+                                    <li><a class="dropdown-item" href="#course4-topic2">Language and Accessibility</a></li>
+                                    <li><a class="dropdown-item" href="#course4-topic3">Engaging Conversations</a></li>
+                                    <li><a class="dropdown-item" href="#course4-topic4">GPTs and Plugins</a></li>
+                                    <li><a class="dropdown-item" href="#course4-topic5">Ideas to Life</a></li>
+                                    <li><a class="dropdown-item" href="#course4-topic6">Time Management</a></li>
+                                    <li><a class="dropdown-item" href="#course4-topic7">Job Search</a></li>
+                                    <li><a class="dropdown-item" href="#course4-topic8">Skill Development</a></li>
+                                    <li><a class="dropdown-item" href="#course4-topic9">Image Analysis</a></li>
+                                    <li><a class="dropdown-item" href="#course4-topic10">Workplace Support</a></li>
+                                    <li><a class="dropdown-item" href="#course4-quiz">Quiz</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#course5" data-course="5">Course 6: AI and Accessibility</a>
+                                <ul class="dropdown-menu submenu" aria-labelledby="course5Dropdown">
+                                    <li><a class="dropdown-item" href="#course5-topic0">Topic 1</a></li>
+                                    <li><a class="dropdown-item" href="#course5-topic1">Topic 2</a></li>
+                                    <li><a class="dropdown-item" href="#course5-topic2">Topic 3</a></li>
+                                    <li><a class="dropdown-item" href="#course5-quiz">Quiz</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-4">
+        <section id="home" class="hidden">
+            <h1>Welcome to AI Learning</h1>
+            <p>Explore our courses on artificial intelligence and enhance your skills!</p>
+        </section>
+        <section id="course0" class="hidden">
+            <h2>Course 1: AI Fundamentals</h2>
+            <div id="content0"></div>
+            <button class="btn btn-primary next-button" data-next="1">Next Course</button>
+        </section>
+        <section id="course1" class="hidden">
+            <h2>Course 2: Generative AI</h2>
+            <div id="content1"></div>
+            <button class="btn btn-primary next-button" data-next="2">Next Course</button>
+        </section>
+        <section id="course2" class="hidden">
+            <h2>Course 3: Search Technology</h2>
+            <div id="content2"></div>
+            <button class="btn btn-primary next-button" data-next="3">Next Course</button>
+        </section>
+        <section id="course3" class="hidden">
+            <h2>Course 4: Responsible AI</h2>
+            <div id="content3"></div>
+            <button class="btn btn-primary next-button" data-next="4">Next Course</button>
+        </section>
+        <section id="course4" class="hidden">
+            <h2>Course 5: Microsoft Copilot</h2>
+            <div id="content4"></div>
+            <button class="btn btn-primary next-button" data-next="5">Next Course</button>
+        </section>
+        <section id="course5" class="hidden">
+            <h2>Course 6: AI and Accessibility</h2>
+            <div id="content5"></div>
+            <button class="btn btn-primary next-button" data-next="0">Next Course</button>
+        </section>
+        <section id="contact" class="hidden">
+            <h1>Contact Us</h1>
+            <p>Email: support@ailearning.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </section>
+    </main>
+
+    <!-- Bootstrap JS and Popper.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

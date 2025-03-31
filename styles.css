@@ -1,0 +1,91 @@
+/* Custom styles to complement Bootstrap */
+body {
+    background-color: #f8f9fa;
+}
+
+main {
+    min-height: 80vh;
+}
+
+.video-quiz-pair {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.video-quiz-pair h3 {
+    margin: 10px 0 5px;
+    color: #343a40;
+}
+
+.video-quiz-pair video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.transcript-container {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.transcript-line {
+    cursor: pointer;
+    padding: 5px;
+    margin: 2px 0;
+    border-radius: 3px;
+}
+
+.transcript-line:hover {
+    background-color: #f1f1f1;
+}
+
+.transcript-line.active {
+    background-color: #e9ecef;
+    font-weight: bold;
+}
+
+.quiz-result {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+/* Submenu styling for Bootstrap dropdown */
+.dropdown-menu .submenu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    margin-top: -6px;
+    display: none;
+}
+
+.dropend:hover > .dropdown-menu.submenu {
+    display: block;
+}
+
+@media (max-width: 991.98px) {
+    .dropdown-menu .submenu {
+        position: static;
+        left: 0;
+        margin-left: 10px;
+    }
+}
